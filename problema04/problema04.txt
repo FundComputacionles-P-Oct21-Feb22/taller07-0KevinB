@@ -1,0 +1,49 @@
+Generar una solución que permita ingresar jugadores de fútbol; por cada jugador se debe solicitar:
+Nombre el jugador
+Posición en el campo de juego
+Edad
+Estatura
+El ciclo de ingreso de información deberá terminar cuando el usuario lo decida. Se debe imprimer el siguiente reporte (usar una cadena de acumulación):
+- Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+- Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+- Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+- Ángel Mena -Delantero-, edad 32, estatura 1.75
+- Michael Estrada -Delantero-, edad 27, estatura 1.93 
+Promedio de edades: 26.8 Promedio de estaturas: 1.87
+
+1. Inicio
+2. jugador, x(100) [{A-Z}, {a-z}, {BS}]
+3. posicion, x(100) [{A-Z}, {a-z}, {BS}]
+4. edad, i[0,n]
+5. estatura, d[0,n]
+6. cadena_vacia, x(1000) [{0-9}, {-, +, BS, /}] <-- ""
+7. salida, x(10) [{a-z} {A-Z}] 
+8. contador, i[0,n] <-- 1
+9. suma_edad, d[0,n] <-- 0
+10. suma_estatura, d[0,n] <-- 0
+11. prom_edad, d[0,n] <-- 1
+12. prom_estatura, d[0,n] <-- 1
+
+13. Haga_hasta
+14. Escribir "Ingrese el nombre del jugador"
+15. Leer jugador
+16. Escribir "Ingrese la posicion en la cancha"
+17. Leer posicion 
+18. Escribir "Ingrese la edad del jugador"
+19. Leer edad
+20. Escribir "Ingrese la estatura"
+21. Leer estatura
+22. Escribir "Escriba "si" para salir del ciclo"
+
+23. cadena_vacia <-- cadena_vacia + jugador + " -" + posicion + "- " + ", " + "edad " + edad + " estatura " + estatura 
+24. suma_edad <-- suma_edad + edad
+25. suma_estatura <-- suma_estatura + estatura
+26. prom_edad <-- suma_edad/contador
+27. prom_estatura <-- suma_estatura/contador 
+28. contador <-- contador + 1
+29. Fin Haga_hasta (salida!="si") 
+
+30. Escribir cadena_vacia
+31. Escribir "Promedio de edades " + prom_edad
+32. Escribir "Promedio de estaturas " + prom_estatura 
+33. Fin

@@ -1,0 +1,13 @@
+Generar e imprimir la siguiente serie:
++1/1+1/3+1/5+1/7+1/9
+
+1. Inicio
+2. limite, i[0,n] <-- 9
+3. numerador, i[0,n] <-- 1
+4. denominador, [0,n] <-- 1
+5. cadena_vacia, x(1000) [{0-9}, {-, +, BS, /}] <-- ""
+6. Para (denominador <-- 1, denominador <= limite, 2) haga
+7. cadena_vacia <-- cadena_vacia + "+" + numerador + "/" + denominador + " "
+8. Fin_Para
+9. Escribir cadena_vacia
+10.Fin
