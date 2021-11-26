@@ -33,17 +33,18 @@ Promedio de edades: 26.8 Promedio de estaturas: 1.87
 19. Leer edad
 20. Escribir "Ingrese la estatura"
 21. Leer estatura
-22. Escribir "Escriba "si" para salir del ciclo"
 
-23. cadena_vacia <-- cadena_vacia + jugador + " -" + posicion + "- " + ", " + "edad " + edad + " estatura " + estatura 
-24. suma_edad <-- suma_edad + edad
-25. suma_estatura <-- suma_estatura + estatura
-26. prom_edad <-- suma_edad/contador
-27. prom_estatura <-- suma_estatura/contador 
-28. contador <-- contador + 1
-29. Fin Haga_hasta (salida!="si") 
+22. cadena_vacia <-- cadena_vacia + jugador + " -" + posicion + "- " + ", " + "edad " + edad + " estatura " + estatura 
+23. suma_edad <-- suma_edad + edad
+24. suma_estatura <-- suma_estatura + estatura
+25. prom_edad <-- suma_edad/contador
+26. prom_estatura <-- suma_estatura/contador 
+27. contador <-- contador + 1
+28. Escribir "Escriba "si" para salir del ciclo"
+29. Leer salida
+30. Fin Haga_hasta (salida = "si") 
 
-30. Escribir cadena_vacia
-31. Escribir "Promedio de edades " + prom_edad
-32. Escribir "Promedio de estaturas " + prom_estatura 
-33. Fin
+31. Escribir cadena_vacia
+32. Escribir "Promedio de edades " + prom_edad
+33. Escribir "Promedio de estaturas " + prom_estatura 
+34. Fin
